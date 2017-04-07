@@ -1,0 +1,45 @@
+/*
+ *
+ * Colors:
+ * https://color.adobe.com/Firenze-color-theme-24198/?showPublished=true
+ *
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 5px 5px 10px #ccc;
+  border: 15px double #ccc;
+}
+
+.clock__hours,
+.clock__minutes,
+.clock__seconds { stroke-width: 8; }
+
+.clock__hours {
+  stroke: #B64926;
+  stroke-dasharray: 10,5,10;
+}
+
+.clock__minutes {
+  stroke: #468966;
+  stroke-dasharray: 5,10,5;
+}
+
+.clock__seconds {
+  stroke: #FFB03B;
+  stroke-dasharray: 0,5,0;
+}

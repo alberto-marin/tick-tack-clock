@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <title>Tic-Tac-Clock</title>
 </head>
 <body>
   <div class="wrapper">
+    <div class="clock">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle -->
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+        <circle id="circle" cx="100" cy="100" r="160" fill="#FFF0A5"/> <!-- r is half of clock width. Enough to look like a square -->
+        <!-- x2 and y2 set by main.js -->
+        <line id="hours" class="clock__hours" x1="100" y1="100" x2="" y2="" />
+        <line id="minutes" class="clock__minutes" x1="100" y1="100" x2="" y2="" />
+        <line id="seconds" class="clock__seconds" x1="100" y1="100" x2="" y2="" />
+      </svg>
+    </div>
 
   </div>
+
 
   <script src="js/main.js"></script>
 
